@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaldi&family=Jim+Nightshade&family=Roboto+Slab&display=swap');
+
+:root {
+    --PRIMARY-COLOR: #003D79;
+    --SECONDARY-COLOR:#003d7983;
+    --LIGHT-COLOR: #FFF;
+    --LIGHT-COLOR-OPC: #FFFFFF9B;
+    --DARK-COLOR: #000;
+    --BTN-1: #FDB913;
+    --BTN-2: #00F545; 
+    
+    --FS-500: 2.5rem;
+    --FS-400: 2rem;
+    --FS-300: 1.5rem;
+    --FS-200: 1rem;
+    --FS-100: 0.75rem;
+    --FS-SMALL: 0.65rem;
+
+    --SPACE: 0.5rem;
+    --SPACE-1: 1rem;
+    --SPACE-2: 2rem;
+    --SPACE-3: 3rem;
+    --SPACE-4: 4rem;
+    --SPACE-5: 7rem;
+
+    --LH-PARA: 1.25rem;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: var(--LIGHT-COLOR);
+    font-family: 'Jaldi', sans-serif;
+    padding: 0 7rem;
+}
+
+h3 {
+    font-size: var(--FS-300);
+}
+
+
+/* ***** ***** ***** ***** NAVBAR ***** ***** ***** ***** */
+
+nav {
+    background-color: var(--PRIMARY-COLOR);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--SPACE) var(--SPACE-5);
+   }
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    padding-left: var(--SPACE-4);
+}
+
+nav ul li a {
+    color: var(--LIGHT-COLOR);
+    font-size: var(--FS-100);
+    text-decoration: none;
+}
+
+nav ul li:nth-child(4) a, nav ul li:last-child a {
+    color: var(--DARK-COLOR);
+    border-radius: 5px;
+    cursor: pointer;
+    padding: .3rem 2rem;
+}
+
+nav ul li:nth-child(4) a {
+    background-color: var(--BTN-2);
+}
+
+nav ul li:last-child a {
+    background-color: var(--BTN-1);
+    font-weight: 600;
+}
+
+nav > img {
+    cursor: pointer;
+    height: 1.5rem;
+    width: 5rem;
+}
+
+
+
+/* ***** ***** ***** ***** FIRST SECTION ***** ***** ***** ***** */
+
+section.first-section {
+    background-color: var(--SECONDARY-COLOR);
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    padding-right: var(--SPACE-5);
+    padding-top: var(--SPACE-3);
+    height: 93.75vh;
+    width: 100%;
+}
+
+.div-heading {
+    background-color: var(--PRIMARY-COLOR);
+    border-radius: 0 13rem 0 0;
+    padding: var(--SPACE-4) var(--SPACE-5);
+    width: 100%;
+}
+
+.div-heading h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: var(--FS-400);
+    padding-bottom: 0.75rem;
+}
+
+.div-heading h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: var(--FS-300);
+    padding-bottom: 0.75rem;
+}
+
+.div-heading p {
+    font-size: var(--FS-200);
+    line-height: var(--LH-PARA);
+    width: 85%;
+}
+
+.div-proof {
+    padding: 2rem var(--SPACE-5) 0;
+}
+
+.stat-heading {
+    background-color: var(--SECONDARY-COLOR);
+    border-radius: 5px;
+    border-top: 3px solid var(--LIGHT-COLOR);
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--FS-300);
+    padding: .75rem 3rem;
+    width: 100%;
+}
+
+.stat {
+    display: flex;
+    font-family: 'Jim Nightshade', cursive;
+    font-size: var(--FS-300);
+    justify-content: space-between;
+    padding-left: 3.7rem;
+    padding-top: .3rem;
+    width: 80%;
+}
+
+.div-proof > p {
+    font-size: var(--FS-200);
+    line-height: var(--LH-PARA);
+    padding-top: 1.25rem;
+    text-align: justify;
+}
+
+
+.first-section img {
+    height: 32rem;
+    width: 32rem;
+}
+
+
+/* ***** ***** ***** ***** SECOND SECTION ***** ***** ***** ***** */
+
+section.second-section {
+    background-color: var(--SECONDARY-COLOR);
+    display: flex;
+    justify-content: space-between;
+    padding: var(--SPACE-3) var(--SPACE-5) var(--SPACE-5);
+}
+
+
+.second-section img {
+    height: 35rem;
+    width: 20rem;
+}
+
+.app-download {
+    background-color: var(--PRIMARY-COLOR);
+    text-align: center;
+    padding: 2rem 6rem;
+}
+
+.app-download h3 {
+    margin-bottom: 1rem;
+}
+
+.app-download a {
+    background-color: var(--LIGHT-COLOR);
+    border-radius: 5px;
+    color: var(--DARK-COLOR);
+    font-size: var(--FS-SMALL);
+    padding: .3rem 1.5rem;
+    text-decoration: none;
+}
+
+.app-download a:last-child {
+    margin-left: 3rem;
+}
+
+.app-download a i {
+    padding-right: .75rem;
+}
+
+.grow {
+    margin-left: 5rem;
+    padding-top: 2.5rem;
+}
+
+.grow .grow-business {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.grow-business h4 {
+    font-size: var(--FS-200);
+}
+.grow-business p {
+    color: var(--LIGHT-COLOR-OPC);
+    font-size: var(--FS-100);
+    padding-bottom: 1.5rem;
+    width: 80%;
+}
+
+.grow-business i {
+    font-size: var(--FS-SMALL);
+}
+
+
+
+/* ***** ***** ***** ***** THIRD SECTION ***** ***** ***** ***** */
+
+.third-section {
+    background-color: var(--PRIMARY-COLOR);
+    display: flex;
+    justify-content: space-between;
+    height: 90vh;
+    padding: var(--SPACE-5);
+}
+
+.flex-left .limits {
+    display: grid;
+    gap: 3rem 0;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 1rem;
+}
+
+.limits div p {
+    font-size: var(--FS-100);
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+    width: 75%;
+    word-spacing: 2px;
+}
+
+.third-section img {
+    height: 45rem;
+    width: 22rem;
+    transform: translateY(-18rem);
+}
+
+
+
+/* ***** ***** ***** ***** FOURTH SECTION ***** ***** ***** ***** */
+
+.fourth-section {
+    background-color: var(--SECONDARY-COLOR);
+    padding: var(--SPACE-3) var(--SPACE-5);
+}
+
+.fourth-section > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem 4rem;
+}
+
+.fourth-section > div > div {
+    background-color: var(--PRIMARY-COLOR);
+    color: var(--LIGHT-COLOR-OPC);
+    padding: 1rem;
+}
+
+
+
+/* ***** ***** ***** ***** FOOTER ***** ***** ***** ***** */
+
+footer {
+    background-color: #003D79;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--SPACE-1) var(--SPACE-5);
+}
+
+footer ul li {
+    display: inline-block;
+    list-style: none;
+    padding-left: 2.5rem;
+}
+
+footer ul li a {
+    color: var(--LIGHT-COLOR);
+    text-decoration: none;
+}
+footer ul li a i {
+    color: var(--LIGHT-COLOR);
+    padding-right: .3rem;
+}
+
+footer > img {
+    cursor: pointer;
+    height: 2.5rem;
+    width: 8.5rem;
+}
+
+
+/* ***** ***** ***** ***** PSEUDOS ***** ***** ***** ***** */
+
+.btn:hover {
+    opacity: .9;
+    transition: .2s;
+}
